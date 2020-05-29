@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Form1
+Public Class Validaciones
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles txtDescripcion.TextChanged
 
     End Sub
