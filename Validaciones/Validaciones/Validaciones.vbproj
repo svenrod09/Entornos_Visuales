@@ -90,6 +90,12 @@
     <Compile Include="Operaciones con Validar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="operacionesConPotenciaYRaiz.Designer.vb">
+      <DependentUpon>operacionesConPotenciaYRaiz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operacionesConPotenciaYRaiz.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="sumaDeDosNumeros.Designer.vb">
       <DependentUpon>sumaDeDosNumeros.vb</DependentUpon>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Operaciones con Validar.resx">
       <DependentUpon>Operaciones con Validar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operacionesConPotenciaYRaiz.resx">
+      <DependentUpon>operacionesConPotenciaYRaiz.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sumaDeDosNumeros.resx">
       <DependentUpon>sumaDeDosNumeros.vb</DependentUpon>
