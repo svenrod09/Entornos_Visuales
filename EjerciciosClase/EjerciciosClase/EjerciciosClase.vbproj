@@ -78,6 +78,12 @@
     <Compile Include="ComboBox Equipos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EntradaTextoMessage.Designer.vb">
+      <DependentUpon>EntradaTextoMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntradaTextoMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -115,6 +121,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ComboBox Equipos.resx">
       <DependentUpon>ComboBox Equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradaTextoMessage.resx">
+      <DependentUpon>EntradaTextoMessage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
