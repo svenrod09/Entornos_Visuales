@@ -78,6 +78,12 @@
     <Compile Include="cicloFor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="entregaMascarillas.Designer.vb">
+      <DependentUpon>entregaMascarillas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="entregaMascarillas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="facturaSencilla.Designer.vb">
       <DependentUpon>facturaSencilla.vb</DependentUpon>
     </Compile>
@@ -111,10 +117,19 @@
     <Compile Include="operacionesConPotenciaYRaiz.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RegistroProductos.Designer.vb">
+      <DependentUpon>RegistroProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="cicloFor.resx">
       <DependentUpon>cicloFor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entregaMascarillas.resx">
+      <DependentUpon>entregaMascarillas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="facturaSencilla.resx">
       <DependentUpon>facturaSencilla.vb</DependentUpon>
@@ -130,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="operacionesConPotenciaYRaiz.resx">
       <DependentUpon>operacionesConPotenciaYRaiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroProductos.resx">
+      <DependentUpon>RegistroProductos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
