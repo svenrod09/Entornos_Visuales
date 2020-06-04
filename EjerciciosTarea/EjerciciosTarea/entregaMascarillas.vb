@@ -6,7 +6,7 @@ Public Class entregaMascarillas
         Dim departamentos, mascarillas As Integer
         departamentos = Val(txtDepartamentos.Text)
         Try
-            If Me.ValidateChildren And txtDepartamentos.Text <> String.Empty And Val(txtDepartamentos.Text) - Int(Val(txtDepartamentos.Text)) = 0 And Val(txtDepartamentos.Text) <= 18 Then
+            If Me.ValidateChildren And txtDepartamentos.Text <> String.Empty And Val(txtDepartamentos.Text) - Int(Val(txtDepartamentos.Text)) = 0 And Val(txtDepartamentos.Text) <= 18 And IsNumeric(txtDepartamentos.Text) Then
 
                 For i = 1 To departamentos Step 1
                     Do
@@ -39,6 +39,7 @@ Public Class entregaMascarillas
                 End If
             End While
         Next
+
         Return itemDepartamento
     End Function
 
@@ -50,45 +51,50 @@ Public Class entregaMascarillas
         itemDepartamento = cmbDepartamento.SelectedItem.ToString
         municipios = Val(txtMunicipios.Text)
 
-        Select Case idDepartamento
-            Case 0
-                reparto(municipios, itemDepartamento)
-            Case 1
-                reparto(municipios, itemDepartamento)
-            Case 2
-                reparto(municipios, itemDepartamento)
-            Case 3
-                reparto(municipios, itemDepartamento)
-            Case 4
-                reparto(municipios, itemDepartamento)
-            Case 5
-                reparto(municipios, itemDepartamento)
-            Case 6
-                reparto(municipios, itemDepartamento)
-            Case 7
-                reparto(municipios, itemDepartamento)
-            Case 8
-                reparto(municipios, itemDepartamento)
-            Case 9
-                reparto(municipios, itemDepartamento)
-            Case 10
-                reparto(municipios, itemDepartamento)
-            Case 11
-                reparto(municipios, itemDepartamento)
-            Case 12
-                reparto(municipios, itemDepartamento)
-            Case 13
-                reparto(municipios, itemDepartamento)
-            Case 14
-                reparto(municipios, itemDepartamento)
-            Case 15
-                reparto(municipios, itemDepartamento)
-            Case 16
-                reparto(municipios, itemDepartamento)
-            Case 17
-                reparto(municipios, itemDepartamento)
-        End Select
-
+        Try
+            If Me.ValidateChildren And txtMunicipios.Text <> String.Empty And Val(txtMunicipios.Text) - Int(Val(txtMunicipios.Text)) = 0 And IsNumeric(txtMunicipios.Text) Then
+                Select Case idDepartamento
+                    Case 0
+                        reparto(municipios, itemDepartamento)
+                    Case 1
+                        reparto(municipios, itemDepartamento)
+                    Case 2
+                        reparto(municipios, itemDepartamento)
+                    Case 3
+                        reparto(municipios, itemDepartamento)
+                    Case 4
+                        reparto(municipios, itemDepartamento)
+                    Case 5
+                        reparto(municipios, itemDepartamento)
+                    Case 6
+                        reparto(municipios, itemDepartamento)
+                    Case 7
+                        reparto(municipios, itemDepartamento)
+                    Case 8
+                        reparto(municipios, itemDepartamento)
+                    Case 9
+                        reparto(municipios, itemDepartamento)
+                    Case 10
+                        reparto(municipios, itemDepartamento)
+                    Case 11
+                        reparto(municipios, itemDepartamento)
+                    Case 12
+                        reparto(municipios, itemDepartamento)
+                    Case 13
+                        reparto(municipios, itemDepartamento)
+                    Case 14
+                        reparto(municipios, itemDepartamento)
+                    Case 15
+                        reparto(municipios, itemDepartamento)
+                    Case 16
+                        reparto(municipios, itemDepartamento)
+                    Case 17
+                        reparto(municipios, itemDepartamento)
+                End Select
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub txtDepartamentos_TextChanged(sender As Object, e As EventArgs) Handles txtDepartamentos.TextChanged
@@ -99,7 +105,19 @@ Public Class entregaMascarillas
         If DirectCast(sender, TextBox).TextLength > 0 Then
             Me.errorProvider.SetError(sender, "")
         Else
-            Me.errorProvider.SetError(sender, "No puede dejar este campo vacío")
+            Me.errorProvider.SetError(sender, "No puede dejar este campo vacío ni ingresar datos que no sean enteros")
+        End If
+    End Sub
+
+    Private Sub txtMunicipios_TextChanged(sender As Object, e As EventArgs) Handles txtMunicipios.TextChanged
+
+    End Sub
+
+    Private Sub txtMunicipios_Validating(sender As Object, e As CancelEventArgs) Handles txtMunicipios.Validating
+        If DirectCast(sender, TextBox).TextLength > 0 Then
+            Me.errorProvider.SetError(sender, "")
+        Else
+            Me.errorProvider.SetError(sender, "No puede dejar este campo vacío ni ingresar datos que no sean enteros")
         End If
     End Sub
 End Class
