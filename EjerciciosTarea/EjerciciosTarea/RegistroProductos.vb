@@ -47,7 +47,6 @@ Public Class RegistroProductos
 
                 'Agrega los valores al combobox que contendrá el listado de productos
                 cmbProductos.Items.Add(producto)
-                incrementarContador = True
             End If
         Catch ex As Exception
             MsgBox("Error al ingresar Datos", vbInformation)

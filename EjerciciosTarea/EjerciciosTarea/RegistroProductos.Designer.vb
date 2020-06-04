@@ -23,6 +23,7 @@ Partial Class RegistroProductos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistroProductos))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
@@ -51,6 +52,7 @@ Partial Class RegistroProductos
         Me.MenúToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmbDescuento = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.errorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +68,7 @@ Partial Class RegistroProductos
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 41)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 109)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(230, 155)
         Me.GroupBox1.TabIndex = 0
@@ -123,30 +125,41 @@ Partial Class RegistroProductos
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.Location = New System.Drawing.Point(281, 81)
+        Me.btnRegistrar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnRegistrar.BackgroundImage = CType(resources.GetObject("btnRegistrar.BackgroundImage"), System.Drawing.Image)
+        Me.btnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRegistrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Location = New System.Drawing.Point(282, 119)
         Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegistrar.Size = New System.Drawing.Size(63, 61)
         Me.btnRegistrar.TabIndex = 1
         Me.btnRegistrar.Text = "Registrar"
-        Me.btnRegistrar.UseVisualStyleBackColor = True
+        Me.btnRegistrar.UseVisualStyleBackColor = False
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(281, 128)
+        Me.btnLimpiar.BackgroundImage = CType(resources.GetObject("btnLimpiar.BackgroundImage"), System.Drawing.Image)
+        Me.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnLimpiar.Location = New System.Drawing.Point(282, 196)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.Size = New System.Drawing.Size(63, 61)
         Me.btnLimpiar.TabIndex = 2
         Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(554, 321)
+        Me.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.btnSalir.BackgroundImage = CType(resources.GetObject("btnSalir.BackgroundImage"), System.Drawing.Image)
+        Me.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSalir.Location = New System.Drawing.Point(556, 383)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(100, 37)
+        Me.btnSalir.Size = New System.Drawing.Size(99, 43)
         Me.btnSalir.TabIndex = 3
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
@@ -158,7 +171,7 @@ Partial Class RegistroProductos
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Location = New System.Drawing.Point(389, 41)
+        Me.GroupBox2.Location = New System.Drawing.Point(390, 109)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(265, 212)
         Me.GroupBox2.TabIndex = 4
@@ -236,7 +249,7 @@ Partial Class RegistroProductos
         'chkDescuento
         '
         Me.chkDescuento.AutoSize = True
-        Me.chkDescuento.Location = New System.Drawing.Point(21, 217)
+        Me.chkDescuento.Location = New System.Drawing.Point(22, 285)
         Me.chkDescuento.Name = "chkDescuento"
         Me.chkDescuento.Size = New System.Drawing.Size(172, 17)
         Me.chkDescuento.TabIndex = 5
@@ -250,7 +263,7 @@ Partial Class RegistroProductos
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.cmbProductos)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 266)
+        Me.GroupBox3.Location = New System.Drawing.Point(13, 334)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(515, 83)
         Me.GroupBox3.TabIndex = 6
@@ -285,7 +298,7 @@ Partial Class RegistroProductos
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'cmbDescuento
@@ -293,17 +306,29 @@ Partial Class RegistroProductos
         Me.cmbDescuento.Enabled = False
         Me.cmbDescuento.FormattingEnabled = True
         Me.cmbDescuento.Items.AddRange(New Object() {"10%", "15%"})
-        Me.cmbDescuento.Location = New System.Drawing.Point(211, 215)
+        Me.cmbDescuento.Location = New System.Drawing.Point(212, 283)
         Me.cmbDescuento.Name = "cmbDescuento"
         Me.cmbDescuento.Size = New System.Drawing.Size(121, 21)
         Me.cmbDescuento.TabIndex = 8
         Me.cmbDescuento.Text = "Seleccione el tipo de descuento"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(69, 42)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(544, 42)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "REGISTRO DE PRODUCTOS"
+        '
         'RegistroProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(666, 370)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(666, 438)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.cmbDescuento)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.chkDescuento)
@@ -314,6 +339,7 @@ Partial Class RegistroProductos
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "RegistroProductos"
         Me.Text = "RegistroProductos"
         Me.GroupBox1.ResumeLayout(False)
@@ -357,4 +383,5 @@ Partial Class RegistroProductos
     Friend WithEvents MenúToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents cmbDescuento As ComboBox
+    Friend WithEvents Label8 As Label
 End Class
