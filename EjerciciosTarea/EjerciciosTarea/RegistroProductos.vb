@@ -131,4 +131,8 @@ Public Class RegistroProductos
 
     Private Sub cmbDescuento_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDescuento.SelectedIndexChanged
     End Sub
+
+    Private Sub RegistroProductos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

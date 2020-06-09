@@ -72,6 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Almacenes.Designer.vb">
+      <DependentUpon>Almacenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Almacenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.vb">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="cicloFor.Designer.vb">
       <DependentUpon>cicloFor.vb</DependentUpon>
     </Compile>
@@ -88,6 +100,18 @@
       <DependentUpon>facturaSencilla.vb</DependentUpon>
     </Compile>
     <Compile Include="facturaSencilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaCuadratica.Designer.vb">
+      <DependentUpon>FormulaCuadratica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaCuadratica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,14 +141,32 @@
     <Compile Include="operacionesConPotenciaYRaiz.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ParesImpares.Designer.vb">
+      <DependentUpon>ParesImpares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParesImpares.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegistroProductos.Designer.vb">
       <DependentUpon>RegistroProductos.vb</DependentUpon>
     </Compile>
     <Compile Include="RegistroProductos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SalariosYDeducciones.Designer.vb">
+      <DependentUpon>SalariosYDeducciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalariosYDeducciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Almacenes.resx">
+      <DependentUpon>Almacenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cicloFor.resx">
       <DependentUpon>cicloFor.vb</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +175,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="facturaSencilla.resx">
       <DependentUpon>facturaSencilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaCuadratica.resx">
+      <DependentUpon>FormulaCuadratica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -146,8 +194,14 @@
     <EmbeddedResource Include="operacionesConPotenciaYRaiz.resx">
       <DependentUpon>operacionesConPotenciaYRaiz.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParesImpares.resx">
+      <DependentUpon>ParesImpares.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroProductos.resx">
       <DependentUpon>RegistroProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalariosYDeducciones.resx">
+      <DependentUpon>SalariosYDeducciones.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
