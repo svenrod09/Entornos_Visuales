@@ -15,7 +15,7 @@ Public Class ingresoPruebas
 
         'Validar que se seleccione una casilla
         If (chkPositivo.Checked = True Or chkNegativo.Checked = True) Then
-            If (chkActivo.Checked = True Or chkFallecido.Checked = True Or chkRecuperado.Checked = True) Then
+            If (chkActivo.Checked = True Or chkFallecido.Checked = True Or chkRecuperado.Checked = True Or chkNegativo.Checked = True) Then
                 estadoPrueba = 1
             End If
         Else
@@ -82,7 +82,7 @@ Public Class ingresoPruebas
                         idDepartamento = 17
                         registroDepartamento(idDepartamento)
                 End Select
-                MsgBox("Cliente ingresado con éxito", vbInformation)
+                MsgBox("Datos ingresados con éxito", vbInformation)
             End If
         Catch ex As Exception
             MsgBox("Error al ingresar los datos", vbInformation)
